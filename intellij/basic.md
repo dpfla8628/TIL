@@ -1,4 +1,4 @@
-##utf-8 setting 
+## utf-8 setting 
 
 + Configuration   
 VM options : Dfile.encoding=UTF-8  
@@ -8,7 +8,7 @@ Dfile.encoding=UTF-8 추가
 
 --------
 
-##단축키  
+## 단축키  
 
 alt + shift + D : 디버그  
 win + 화살표 : 창이동   
