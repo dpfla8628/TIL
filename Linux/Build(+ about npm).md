@@ -43,3 +43,9 @@ client -  explorer . - 파일 7개
 2) npm install 모듈명 --save : 모듈 설치 시 --save 옵션을 주면 package.json에 자동 등록됨  
 
 - node_modules 디렉토리가 없어도 package.json만 있으면 npm install 로 프로젝트 사용 모듈 다운로드 받을 수 있음  
+
+(node -v를 통해 버전 확인이 가능하다.)
+
+**[npm 시작하기]** 
+npm start
+
