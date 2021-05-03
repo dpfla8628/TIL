@@ -4,7 +4,7 @@
           
 + 편집 : sudo nano /etc/environment     
 path추가 -> :/user/local/jdk1.8.0_161/bin    
-+ ==> source /etc/environment 를 통해 적용시킨다  
+==> source /etc/environment 를 통해 적용시킨다  
 
 ❓편집하다 기억이 잘 안나면? ctrl+z눌러서 백그라운드에 잠시 두고, 경로 찾고, fg 1을 통해 다시 들어간다.  
 
