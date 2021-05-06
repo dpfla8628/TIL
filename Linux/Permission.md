@@ -18,3 +18,14 @@ drwxr-xr-x
 ex) .www 파일에 대한 모든 권한 풀어주기  
 chmod -R 755 /home/testy/www  
 (R : 하위 폴더까지 적용)  
+   
+  
+> 파일 권한 변경
+  
+기존 파일 "aa"의 내용 : "echo aa"  
+./aa ⇒ *echo aa*   
+이를 실행(x)시키기 위해서 권한 변경이 필요하다 !  
+  
+chmod 764 aa → ./aa ⇒ *aa*    
+equals==
+chmod u+x aa : user에 실행권한(x)를 줘라 !  
