@@ -20,4 +20,3 @@ sudo apt-get install telnetd
 telnet [ip]
 ```
 
--- 추후에 할 것 : ssh, ftp, dns 정리
