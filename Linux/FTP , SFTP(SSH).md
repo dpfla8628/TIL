@@ -12,7 +12,6 @@ sudo apt install openssh-server
 ```
 => putty를 통해서 해당 서버 접속 가능 (포트 : 22)
 
-
 ## FTP 
 : 파일을 전송하는 통신 규약
 ```
