@@ -6,8 +6,7 @@ URI 는 네트워크 상 자원을 가리키는 일종의 고유 식별자(ID) �
 ![image](https://user-images.githubusercontent.com/72377237/122423642-07baf080-cfc9-11eb-957d-c573a4288772.png)
 
 ## URI / URL / URN 의 차이
-![image](https://user-images.githubusercontent.com/72377237/122423698-14d7df80-cfc9-11eb-9f7d-419d02e013eb.png)
-<img src = "https://user-images.githubusercontent.com/72377237/122423766-2325fb80-cfc9-11eb-88f8-c52a3a41fb4c.png" width="50px">
+<img src="https://user-images.githubusercontent.com/72377237/122423698-14d7df80-cfc9-11eb-9f7d-419d02e013eb.png" width="300"><img src="https://user-images.githubusercontent.com/72377237/122423766-2325fb80-cfc9-11eb-88f8-c52a3a41fb4c.png">
 
 ------------------
 ### 코드상에서..
