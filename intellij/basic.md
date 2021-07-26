@@ -19,3 +19,6 @@ Alt + 1 : Project 창 이동
 Exit : 코드 창 이동    
 Ctrl + Tab : 이전 파일  
 Ctrl + PageUp/PageDown : 탭 좌/우 이동  
+
+test
+
