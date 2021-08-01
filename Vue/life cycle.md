@@ -1,0 +1,39 @@
+
+![image](https://user-images.githubusercontent.com/72377237/125288773-79345780-e359-11eb-8196-b5f6277f0e06.png)
+
+```
+<html>
+  <head>
+    <title>Vue Instance Lifecycle</title>
+  </head>
+  <body>
+    <div id="app">
+      {{ message }}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue.js!'
+        },
+        beforeCreate: function() {
+          console.log("beforeCreate");
+        },
+        created: function() {
+          console.log("created");
+        },
+        mounted: function() {
+          console.log("mounted");
+          this.message = 'Hello Vue!';
+        },
+        updated: function() {
+          console.log("updated");
+        }
+      });
+    </script>
+  </body>
+</html>
+```
+
