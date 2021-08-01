@@ -1,54 +1,47 @@
-global
+두번째 컴퓨넌트 영역에는 지역 컴포넌트가 나타나지 않는다.  
+why? 유효 범위가 다르기 때문. 
+
 ```
 <html>
   <head>
-    <title>Vue Component Registration</title>
+    <title>Vue Local and Global Components</title>
   </head>
   <body>
     <div id="app">
-      <button>컴포넌트 등록</button>
-			<my-component></my-component>
+      <h3>첫 번째 인스턴스 영역</h3>
+      <my-global-component></my-global-component>
+      <my-local-component></my-local-component>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
-    <script>
-      Vue.component('my-component', {
-        template: '<div>전역 컴포넌트가 등록되었습니다!</div>'
-      });
-
-      new Vue({
-        el: '#app'
-      });
-    </script>
-  </body>
-</html>
-```
-
-   
-local
-```
-<html>
-  <head>
-    <title>Vue Component Registration</title>
-  </head>
-  <body>
-    <div id="app">
-      <button>컴포넌트 등록</button>
+    <hr>
+    <div id="app2">
+      <h3>두 번째 인스턴스 영역</h3>
+      <my-global-component></my-global-component>
       <my-local-component></my-local-component>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
     <script>
+      // 전역 컴포넌트 등록
+      Vue.component('my-global-component', {
+        template: '<div>전역 컴포넌트 입니다.</div>'
+      });
+
+      // 지역 컴포넌트 내용
       var cmp = {
-        // 컴포넌트 내용
-        template: '<div>지역 컴포넌트가 등록되었습니다!</div>'
+        template: '<div>지역 컴포넌트 입니다.</div>'
       };
 
       new Vue({
         el: '#app',
+        // 지역 컴포넌트 등록
         components: {
           'my-local-component': cmp
         }
+      });
+
+      // 두 번째 인스턴스
+      new Vue({
+        el: '#app2'
       });
     </script>
   </body>
