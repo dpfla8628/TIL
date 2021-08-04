@@ -2,7 +2,7 @@
 html 태크 안에 v- 접두사를 가지는 모든 속성
 
 - v-if : 참,거짓 여부에 따라 화면에 표시 혹은 삭제
-- v-for : 반복 출력
+- v-for : 반복 출력 (index, name, value 제공)
 - v-show : v-if와 비슷하나 false일 결우 display:none;으로 처리하여 화면상에서만 안보이게 된다
 - v-bind : 뷰 데이터 속성을 연결
 - v-on : 이벤트를 감지하여 처리
