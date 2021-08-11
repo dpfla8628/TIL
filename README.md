@@ -1,2 +1,5 @@
 # TIL
-Today I Learned
+Today I Learned📚
+  
+오늘 배운 내용을 정리하는 공간입니다😁      
+매일 잔디🍃를 심고 꾸준히 성장해 나가는 것이 목표입니다⛳️       
