@@ -1,0 +1,19 @@
+```
+        let keyword = this.gridApi.searchKeyword
+        if (keyword) {
+          let filter = this.gridApi.filter
+          let filterKey = []
+          for (var key in filter) { filterKey.push(key) };
+          let count = 0
+          for (let j = 0; j < filterKey.length; j++) {
+            let item = filterKey[j]
+            let test = alarms[i][item]
+            if (test.indexOf(keyword) > 0) {
+              count++
+            }
+          }
+          if (count <= 0) {
+            alarms.splice(i, 1)
+          }
+        }
+```
