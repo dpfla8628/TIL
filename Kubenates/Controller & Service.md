@@ -29,14 +29,18 @@ https://dailyheumsi.tistory.com/208
 ## Service
 : Pod 간의 로드 밸런싱 역할.  
 : Pod를 묶어주는 Virtual IP.  
-(-> 라운드 로빈 방식 : 우선순위를 두지 않고, 순서대로 시간단위(Time Quantum)로 CPU를 할당하는 방식의 CPU 스케줄링 알고리즘)
+(-> 라운드 로빈 방식 : 우선순위를 두지 않고, 순서대로 시간단위(Time Quantum)로 CPU를 할당하는 방식의 CPU 스케줄링 알고리즘)           
+* NodePort?          
+ : 클러스터 내 노드의 ip:port 로도 접근가능하게 함      
+ :  ex. curl 10.146.0.10:30036       
+ :  10.146.0.10 는 노드의 ip 고, 30036 는 NodePort 로 설정한 포트임           
+ 
+ ---------------
+       
 * Ingress
 : Ingress 는 api 게이트 웨이, 즉 url 기반 라우팅 역할을 한다. Service 앞에 붙는다.
 예를 들어, /user 로 들어오는 트래픽은 service A 에, /products 로 들어오는 트래픽은 service B 로 라우팅 시켜준다.
 Ingress 를 Service 앞에 달아두면, Service 는 NodePort 타입으로 선언되어야 한다.
-(+ NodePort?)
-* 클러스터 내 노드의 ip:port 로도 접근가능하게 함
-* ex. curl 10.146.0.10:30036
-* 10.146.0.10 는 노드의 ip 고, 30036 는 NodePort 로 설정한 포트임
+
 
 
