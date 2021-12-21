@@ -41,6 +41,25 @@ https://dailyheumsi.tistory.com/208
 : Ingress 는 api 게이트 웨이, 즉 url 기반 라우팅 역할을 한다. Service 앞에 붙는다.
 예를 들어, /user 로 들어오는 트래픽은 service A 에, /products 로 들어오는 트래픽은 service B 로 라우팅 시켜준다.
 Ingress 를 Service 앞에 달아두면, Service 는 NodePort 타입으로 선언되어야 한다.
+```
+apiVersion: extentions/v1beta1
+kind: Ingress
+metadata:
+   name: test-ingress
+spec:
+   rules:
+      -http:
+         paths:
+         -path:/
+          backend:
+            serviceName: serviceA
+            servicePort: 80
+        -path:/pay
+          backend:
+            serviceName: serviceB
+            servicePort: 80
+           
+```
 
 
 
