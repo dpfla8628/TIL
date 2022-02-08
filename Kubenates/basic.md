@@ -1,4 +1,5 @@
-Kubenates.  
+Kubenates   
+: Linux 컨테이너 작업을 자동화하는 오픈소스 플랫폼.  
 설치 없이 쿠버네티스 사용하기.  
 https://www.katacoda.com/courses/kubernetes/playground   
     
