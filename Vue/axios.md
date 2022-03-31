@@ -12,8 +12,8 @@
   new Vue({
     el: '#app',
     methods: {
-      getData: function() {
-        axios.get('https://raw.githubusercontent.com/joshua1988/doit-vuejs/master/data/demo.json')
+      async getData: function() {
+          await axios.get('https://raw.githubusercontent.com/joshua1988/doit-vuejs/master/data/demo.json')
           .then(function(response) {
             console.log(response);
                             //객체 형태이기 때문에 Json.parse을 할 필요가 없다. 
@@ -22,4 +22,24 @@
     }
   });
 </script>
+```
+참고 ) 
+async await 가 promise보다 가독성이 좋음
+```
+const condition = true;
+const promise = new Promise((resolve, reject) => {
+  if (condition) {
+    resolve('resolved');
+  } else {
+    reject('rejected');
+  }
+});
+
+promise
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
 ```
