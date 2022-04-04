@@ -1,4 +1,4 @@
-```java
+```
 const object1 = {
   a: 'somestring',
   b: 42,
