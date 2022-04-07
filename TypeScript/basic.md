@@ -25,6 +25,7 @@ tsc -w
 }
 ```
 3. vue 파일에서 사용하는 방법
+https://kr.vuejs.org/v2/guide/typescript.html
 ```vue
 <script lang="ts">
   
