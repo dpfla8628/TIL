@@ -10,7 +10,7 @@
 
 ### ts 시작하기
 1. index.ts 생성
-ts를 js로 자동변환하는 명령어
+ts를 js로 자동변환하는 명령어 - 컴
 ```
 // Terminal
 tsc -w
