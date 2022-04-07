@@ -22,9 +22,14 @@ tsc -w
 ```ts
 {
   "compilerOptions": {
+    // Vue의 브라우저 지원과 같습니다.
     "target": "es5",
-    "module": "commonjs"
-   }
+    // 이러면 `this`에 대한 데이터 속성에 대한 더 엄격한 추측이 가능합니다.
+    "strict": true,
+    // webpack 2 이상 또는 rollup을 사용하여 트리셰이킹을 하려면,
+    "module": "es2015",
+    "moduleResolution": "node"
+  }
 }
 ```
 3. vue 파일에서 사용하는 방법
