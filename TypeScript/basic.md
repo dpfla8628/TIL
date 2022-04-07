@@ -4,7 +4,7 @@
 또한 에러 메세지의 설명이 친절해진다  
 따라서 코드의 버그 확인이나 리펙토링 시 편리하다  
 
-| test site  
+> test site  
 https://www.typescriptlang.org/play?#code/GYVwdgxgLglg9mABKSAKAHogXGEBbAIwFMAnRAH0QGcoSYwBzASmwDc4YATRAbwChEiGMESooATwAOROCMwBeRYgDkuQqWUt+gwRARU4AGyIA6Q3AapEmANSIAzIiYDEAXz7uU0eEgBeGAH5sNWISFix2Ll4XXX0jU3NLdGd3fwBGACZ7JiA
 
 ### 설치
