@@ -19,3 +19,5 @@ ilm의 뜻은 index lifecycle management의 약자입니다. 즉 해당 인덱�
     }
 }
 ```
+-> 이렇게 curl으로 처리할 수도 있지만 키바나를 이용하는게 훨씬 편리하다
+http://IP:5601/app/management/data/index_lifecycle_management/policies
