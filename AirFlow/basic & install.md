@@ -44,8 +44,9 @@ create user airflow@localhost identified by 1234;
 # vi airflow.cfg
 sql_alchemy_conn = mysql://airflow:1234@localhost:3306/airflow?charset=utf8
 
-# db reset
+# db reset & upgrade
 airflow db init
+airflow db upgrade
 
 ====================
 
