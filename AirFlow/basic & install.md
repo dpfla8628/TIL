@@ -32,8 +32,22 @@ sudo easy_install pip
 # airflow install
 pip install apache-airflow
 
+====================
+
+# db create
+CREATE DATABASE airflow;
+
+# db user create
+create user airflow@localhost identified by 1234;
+
+#db config
+# vi airflow.cfg
+sql_alchemy_conn = mysql://airflow:1234@localhost:3306/airflow?charset=utf8
+
 # db reset
 airflow db init
+
+====================
 
 # user create
 $ airflow users create \ 
@@ -43,6 +57,8 @@ $ airflow users create \
 > --role Admin \              # 해당 부분은 고정
 > --password {Password} \
 > --email {Email}
+
+====================
 
 # webserver start
 airflow webserver --port 8080
