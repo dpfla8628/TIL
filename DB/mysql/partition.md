@@ -18,13 +18,17 @@ PARTITION BY RANGE (partitionDate) (
  	PARTITION p202211 VALUES LESS THAN (UNIX_TIMESTAMP('2022-12-01 00:00:00')),
  	PARTITION p202212 VALUES LESS THAN (UNIX_TIMESTAMP('2023-01-01 00:00:00'))
 );
-
+```
+* 전체 파티션 이름 조회
+```mysql
+select partition_name from information_schema.PARTITIONS where TABLE_NAME = '[테이블명]'
+```
 ```
 * 전체 파티션만 삭제
 ```mysql
-alter table tcore_alarm.tb_alarm_result_agg  remove partitioning
+alter table [테이블명]  remove partitioning
 ```
 * 원하는 파티션 + 데이터까지 삭제
 ```mysql
-alter table tcore_alarm.tb_alarm_result_agg drop partition p202304;
+alter table [테이블명] drop partition p202304;
 ```
