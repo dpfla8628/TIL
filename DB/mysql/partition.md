@@ -23,7 +23,6 @@ PARTITION BY RANGE (partitionDate) (
 ```mysql
 select partition_name from information_schema.PARTITIONS where TABLE_NAME = '[테이블명]'
 ```
-```
 * 전체 파티션만 삭제
 ```mysql
 alter table [테이블명]  remove partitioning
